@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    list-style: none;
 }
 
 .landing-section {
@@ -50,6 +50,21 @@
 .navdiv nav ul li a:hover {
     text-decoration: underline;
 }
+
+.navdiv .login-link {
+    margin-left: auto;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navdiv .login-link:hover {
+    transform: scale(1.05);
+}
+
 
 .landing-section .content {
     position: absolute;
@@ -171,6 +186,7 @@
 }
 
 @media(max-width: 800px) {
+
     .category .container,
     .category .mens-container {
         flex-direction: column;
@@ -281,4 +297,69 @@
     font-size: 1.2rem;
     cursor: pointer;
     margin: 15px 0;
+}
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #f1f1f1;
+
+}
+
+.footer .footer-content {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.footer .footer-content .footer-about {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer .footer-content .footer-about h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.footer .footer-content .footer-about p {
+    font-size: 1.1rem;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* .footer .footer-content .categoryLinks{
+    margin-left: 55px;
+} */
+.footer .footer-content .categoryLinks,
+.footer .footer-content .footer-social {
+    flex: 1;
+    min-width: 0;
+    margin-left: 55px;
+}
+
+.footer .footer-content .categoryLinks h3,
+.footer .footer-content .footer-social h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.footer .footer-content .categoryLinks ul,
+.footer .footer-content .footer-social ul {
+    margin-top: 10px;
+}
+
+.footer .footer-content .categoryLinks ul li,
+.footer .footer-content .footer-social ul li {
+    margin: 4px 0;
+}
+
+.footer .footer-content .categoryLinks ul li a,
+.footer .footer-content .footer-social ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
 }
