@@ -55,13 +55,25 @@
     position: fixed;
     top: 65px;
     left: 0;
-    height: 45vh;
-    width: 300px;
+    height: 50vh;
+    width: 400px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    /* backdrop-filter: blur(10px); */
+    background-color: #fff;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: block;
+}
+
+.sidebar nav .close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.sidebar nav .close img{
+    width: 35px;
+    height: 35px;
 }
 
 .sidebar ul {
@@ -69,15 +81,37 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 30px;
 
 }
-.sidebar ul li {
-    margin: 15px 0;
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
-.menu-btn{
+.sidebar .login-link{
+    padding: 30px;
+    font-size: 2rem !important;
+}
+
+.sidebar .login-link .icon{
+    font-size: 35px;
+}
+
+.navigation .navdiv ul li.menu-btn {
+    padding: 10px 20px;
     display: none;
 }
+.navigation .navdiv ul li.menu-btn img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
 .navdiv .login-link {
     margin-left: auto;
     color: #000;
@@ -98,14 +132,18 @@
     .hideOnMobile{
         display:none;
     }
-    .menu-btn{
+    .navigation .navdiv ul li.menu-btn {
         display: block;
+    }
+    .navdiv .display{
+        display: none;
     }
 }
 @media (max-width: 500px){
     .sidebar{
         width: 100%;
     }
+   
 }
 
 .landing-section .content {
@@ -133,17 +171,16 @@
 
 @media(max-width: 800px) {
     .landing-section {
-        /* height: 100vh; */
+        height: 60vh;
     background-size: cover;
     }
 
     .landing-section .content h1 {
-        font-size: 2.5rem;
+        display: none;
     }
 
     .landing-section .content button {
-        width: 100%;
-        margin: 10px 0;
+        display: none;
     }
 }
 
