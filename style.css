@@ -29,7 +29,7 @@
 }
 
 .logo a {
-    color: #fff;
+    color: #464646;
     text-decoration: none;
     font-size: 2.5rem;
     margin-right: 35px;
@@ -60,7 +60,7 @@
     z-index: 999;
     background-color: #fff;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: block;
+    display: none;
 }
 
 .sidebar nav .close{
@@ -292,7 +292,7 @@
     .category .mens-container .mens-card {
         width: 90%;
         height: 400px;
-        margin-bottom: 40px;
+        margin: 40px 0;
     }
 
     .category .container .card button,
@@ -314,7 +314,6 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    /* Ensures the video covers the area */
     display: block;
 }
 
@@ -341,6 +340,25 @@
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    .video {
+        height: 500px;
+    }
+
+    .video-player video,
+    .main-video {
+        height: 500px;
+    }
+
+    .video .video-content h2 {
+        font-size: 3rem;
+    }
+
+    .video .video-content .shopNow {
+        font-size: 1.5rem;
+    }
 }
 
 .suscribe {
