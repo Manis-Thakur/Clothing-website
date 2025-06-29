@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-container{
+            flex: 1;
+            padding: 60px;
+            width: 50%;
+        }
+
+        .image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+          .main-container h1{
+            text-align: center;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="main-container">
+            <h1>Login</h1>
+            <p>please enter your details</p>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <a href="#">Forget password</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>or continue with</p>
+            <button>Google</button>
+            <button>Facebook</button>
+
+        </div>
+
+        <div class="image">
+            <img src="login.webp" alt="image">
+        </div>
+    </div>
+</body>
+
+</html>
