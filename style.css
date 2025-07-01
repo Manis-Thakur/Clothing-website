@@ -23,7 +23,6 @@
 .navdiv {
     display: flex;
     align-items: center;
-
     height: 70px;
     position: sticky;
 }
