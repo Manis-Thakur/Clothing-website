@@ -19,7 +19,8 @@ header {
     height: 80px;
 
 }
-nav{
+
+nav {
     flex: 1;
 }
 
@@ -59,4 +60,74 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 1.4rem;
     gap: 5px;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background-color: #fff;
+    padding: 35px;
+}
+
+.sidebar hr {
+    margin-top: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+.price input{
+    width: 70%;    
+    border: 1px solid #ccc;
+    accent-color: #000;
+    display: block;
+    border-radius: 5px;
+}
+.price span{
+    display: inline-block;
+
+    font-size: 1.2rem;
+    color: #333;
+
+}
+
+
+
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
