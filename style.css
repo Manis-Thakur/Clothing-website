@@ -8,7 +8,7 @@
 .landing-section {
     width: 100%;
     height: 95vh;
-    background: url(background.png);
+    background: url(images/background.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,7 +225,7 @@
 .category .mens-container .mens-card {
     width: 450px;
     height: 450px;
-    background-image: url(top.jpg);
+    background-image: url(images/top.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,23 +234,23 @@
 }
 
 .category .container .card:nth-child(2) {
-    background-image: url(bottoms.avif);
+    background-image: url(images/bottoms.avif);
 }
 
 .category .container .card:nth-child(3) {
-    background-image: url(shoes.avif);
+    background-image: url(images/shoes.avif);
 }
 
 .category .mens-container .mens-card:nth-child(1) {
-    background-image: url(mens-top.webp);
+    background-image: url(images/mens-top.webp);
 }
 
 .category .mens-container .mens-card:nth-child(2) {
-    background-image: url(mens-bottom.jpg);
+    background-image: url(images/mens-bottom.jpg);
 }
 
 .category .mens-container .mens-card:nth-child(3) {
-    background-image: url(mens-shoes.avif);
+    background-image: url(images/mens-shoes.avif);
 }
 
 
